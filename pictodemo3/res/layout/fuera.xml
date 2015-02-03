@@ -1,0 +1,347 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".PictoActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imCole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="180dp"
+                android:maxWidth="180dp"
+                android:onClick="clickHandler"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cole" />
+
+            <ImageView
+                android:id="@+id/imCalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="180dp"
+                android:maxWidth="180dp"
+                android:onClick="clickHandler"
+                android:scaleType="fitCenter"
+                android:src="@drawable/calle" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imAuColegio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:maxHeight="53dp"
+                android:maxWidth="180dp"
+                android:onClick="clickHandler"
+                android:scaleType="fitCenter"
+                android:src="@drawable/altaveullarg2" />
+
+            <ImageView
+                android:id="@+id/imAuCalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:maxHeight="53dp"
+                android:maxWidth="180dp"
+                android:onClick="clickHandler"
+                android:scaleType="fitCenter"
+                android:src="@drawable/altaveullarg2" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#0099cc" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imAtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:baselineAlignBottom="false"
+                    android:clickable="true"
+                    android:maxHeight="60dp"
+                    android:maxWidth="145dp"
+                    android:onClick="clickHandler"
+                    android:src="@drawable/atras" />
+
+                <ImageView
+                    android:id="@+id/imAuAtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:maxHeight="60dp"
+                    android:maxWidth="60dp"
+                    android:onClick="clickHandler"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/altaveu2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <TextView
+                    android:id="@+id/TextView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/TextView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/TextView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/TextView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/TextView09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#0099cc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1.5" >
+
+                <Button
+                    android:id="@+id/ayuda_button"
+                    style="@style/AppBaseTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:enabled="true"
+                    android:gravity="center|center_vertical"
+                    android:height="60dp"
+                    android:maxHeight="70dp"
+                    android:maxWidth="90dp"
+                    android:minHeight="60dp"
+                    android:minWidth="90dp"
+                    android:onClick="clickHandler"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="0"
+                    android:text="@string/ayuda_button"
+                    android:textColor="@color/white_cap"
+                    android:textSize="25sp"
+                    android:textStyle="normal|bold"
+                    android:typeface="sans"
+                    android:width="90dp" />
+
+            <!-- style="@style/FullscreenActionBarStyle" -->
+
+                <ImageView
+                    android:id="@+id/imAuAyuda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:baselineAlignBottom="false"
+                    android:clickable="true"
+                    android:cropToPadding="false"
+                    android:maxHeight="60dp"
+                    android:maxWidth="60dp"
+                    android:onClick="clickHandler"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/altaveu2" />
+
+                <ImageView
+                    android:id="@+id/imAuAyuda2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_weight="0.5"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:maxHeight="60dp"
+                    android:maxWidth="60dp"
+                    android:onClick="clickHandler"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ayuda2" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

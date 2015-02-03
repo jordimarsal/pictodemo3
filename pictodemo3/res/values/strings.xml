@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PICTO CONNECTION</string>
+    <string name="ayuda_button">AYUDA</string>
+    <string name="action_settings">Opciones</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="space">. .</string>
+    <string name="casa">CASA</string>
+    <string name="fuera">FUERA DE CASA</string>
+    <string name="colegio">COLEGIO</string>
+    <string name="calle">CALLE</string>
+    <string name="nodisponible">NO DISPONIBLE</string>
+    
+</resources>
